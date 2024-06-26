@@ -87,7 +87,7 @@ body {
 .array-bar {
   background-color: turquoise;
   margin: 0 2px;
-  width: 4px;
+  width: 80px;
   transition: height 0.2s ease;
 }
 

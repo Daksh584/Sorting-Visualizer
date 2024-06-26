@@ -42,6 +42,7 @@ body {
 
 .button {
   background-color: #1abc9c;
+  
   padding: 15px;
   margin: 10px 0;
   width: 100%;
@@ -100,4 +101,43 @@ body {
   text-align: center;
   font-size: 0.8em;
   box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 85%;
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  .description {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .array-container {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 1.2em;
+  }
+
+  .button {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  .slider {
+    width: 80%;
+  }
 }

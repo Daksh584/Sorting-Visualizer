@@ -4,8 +4,10 @@ import { animateBubbleSort } from '../Sorting Algos/BubblesortAnimation';
 import { animateSelectionSort } from '../Sorting Algos/SelectionSortAnimation';
 import { animateQuickSort } from '../Sorting Algos/QuickSortAnimation';
 import { animateHeapSort } from '../Sorting Algos/HeapSortAnimations';
+import { animateRadixSort } from '../Sorting Algos/RadixSortAnimation';
 import { animateInsertionSort } from '../Sorting Algos/InsertionSortAnimation';
 import './SortingVisualizer.css';
+
 
 const ALGORITHMS = {
   'Merge Sort': {
@@ -25,6 +27,9 @@ const ALGORITHMS = {
   },
   'Insertion Sort': {
     complexity: 'Time: O(n^2), Space: O(1)',
+  },
+  'Radix Sort': {
+    complexity: 'Time: O(n*Digits of number), Space: O(n+no.of digits in max number)',
   },
 };
 
@@ -151,6 +156,13 @@ export default function SortingVisualizer() {
             disabled={sortingInProgress}
           >
             Insertion Sort
+          </button>
+          <button
+            className='button ${buttonClass}'
+            onClick={() => handleAlgorithmClick('Radix Sort', animateRadixSort)}
+            disabled={sortingInProgress}
+          >
+            Radix Sort
           </button>
         </div>
         {selectedAlgorithm && (

@@ -7,7 +7,7 @@ function Changetogreen(animations, storeTimeoutId) {
     for (let i = 0; i < animations.length; i++) {
         const timeoutId = setTimeout(() => {
             arrayBars[animations[i][0]].style.backgroundColor = 'green';
-        }, i * ANIMATION_SPEED_MS);
+        }, i * 1);
         storeTimeoutId(timeoutId);
     }
 }

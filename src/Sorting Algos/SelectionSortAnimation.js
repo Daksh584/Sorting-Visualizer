@@ -68,6 +68,6 @@ function Changetogreen(animations, auxiliaryArray) {
         setTimeout(() => {
             arrayBars[animations[i][0]].style.backgroundColor = 'green';
             arrayBars[animations[i][1]].style.backgroundColor = 'green';
-        }, i * ANIMATION_SPEED_MS);
+        }, i * 1);
     }
 }

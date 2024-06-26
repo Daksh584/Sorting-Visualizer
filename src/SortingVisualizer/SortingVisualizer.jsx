@@ -31,7 +31,7 @@ const ALGORITHMS = {
 export default function SortingVisualizer() {
   const [array, setArray] = useState([]);
   const [speed, setSpeed] = useState(10); // Default animation speed in milliseconds
-  const [arraySize, setArraySize] = useState(50); // Default number of bars in the array
+  const [arraySize, setArraySize] = useState(10); // Default number of bars in the array
   const [selectedAlgorithm, setSelectedAlgorithm] = useState('');
   const [sortingInProgress, setSortingInProgress] = useState(false);
   const timeoutIds = useRef([]);
